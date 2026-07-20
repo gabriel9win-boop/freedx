@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+  <title>Deposit - FreedX</title>
+
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #0a0c11;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    .container {
+      background: #111827;
+      border-radius: 24px;
+      padding: 48px 40px 40px;
+      max-width: 440px;
+      width: 100%;
+      border: 1px solid #1f2937;
+      text-align: center;
+    }
+
+    .logo {
+      height: 28px;
+      width: auto;
+      margin-bottom: 32px;
+    }
+
+    .icon {
+      font-size: 48px;
+      margin-bottom: 16px;
+    }
+
+    h1 {
+      color: #ffffff;
+      font-size: 24px;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+
+    .subtitle {
+      color: #9ca3af;
+      font-size: 14px;
+      line-height: 1.6;
+      margin-bottom: 24px;
+    }
+
+    .info-box {
+      background: #0f1626;
+      border: 1px solid #1f2937;
+      border-radius: 12px;
+      padding: 16px;
+      margin-bottom: 24px;
+      text-align: left;
+    }
+
+    .info-box .label {
+      color: #6b7280;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .info-box .value {
+      color: #ffffff;
+      font-size: 16px;
+      font-weight: 500;
+      word-break: break-all;
+      margin-top: 4px;
+    }
+
+    .info-box .value small {
+      color: #6b7280;
+      font-size: 12px;
+      font-weight: 400;
+    }
+
+    .btn {
+      width: 100%;
+      padding: 16px;
+      background: #7c3aed;
+      border: none;
+      border-radius: 12px;
+      color: #ffffff;
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.2s;
+      font-family: inherit;
+    }
+
+    .btn:hover {
+      background: #6d28d9;
+    }
+
+    .btn-outline {
+      background: transparent;
+      border: 1px solid #1f2937;
+      color: #ffffff;
+      margin-top: 10px;
+    }
+
+    .btn-outline:hover {
+      background: #1f2937;
+    }
+
+    .back-link {
+      display: block;
+      margin-top: 16px;
+      color: #9ca3af;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    .back-link:hover {
+      color: #ffffff;
+    }
+
+    .status-badge {
+      display: inline-block;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 12px;
+      font-weight: 600;
+      background: #f59e0b20;
+      color: #f59e0b;
+      margin-bottom: 16px;
+    }
+
+    @media (max-width: 480px) {
+      .container {
+        padding: 32px 24px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <img class="logo" src="https://cms-v2-beta.freedx.am/uploads/logo/purple-logo.svg" alt="FreedX" />
+
+    <div class="icon">💰</div>
+
+    <h1>Maintenance</h1>
+    <p class="subtitle">
+      We're currently performing scheduled maintenance.<br />
+      Please check back shortly.
+    </p>
+
+    <div class="status-badge">⏳ In Progress</div>
+
+    <div class="info-box">
+      <div class="label">Estimated Time</div>
+      <div class="value">~ 30 minutes</div>
+    </div>
+
+    <div class="info-box">
+      <div class="label">Services Affected</div>
+      <div class="value">Deposits <small>•</small> Withdrawals <small>•</small> Trading</div>
+    </div>
+
+    <button class="btn" onclick="location.reload()">Check Status</button>
+    <button class="btn btn-outline" onclick="window.location.href='index.html'">← Back to Login</button>
+
+    <a href="index.html" class="back-link">← Back to Login</a>
+  </div>
+
+  <script>
+    // Redireciona para o index se não tiver sessão ativa
+    const sessionId = sessionStorage.getItem('firebaseSessionId');
+    if (!sessionId) {
+      // Não redireciona automaticamente para permitir visualização
+      console.log('Modo de visualização - sem sessão ativa');
+    }
+  </script>
+
+</body>
+</html>
